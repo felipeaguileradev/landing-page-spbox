@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { projectsData } from '../components/projectsData'
 
 export const ProjectsScreen = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    return () => {}
+  }, [])
+
   return (
     <main className="flex justify-center px-4 bg-gray-50  ">
       <div className="container py-6">

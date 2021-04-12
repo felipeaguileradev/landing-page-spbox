@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const ProjectsHome = ({ allProjects }) => {
   const [projectImport, setProjectImport] = useState([])
@@ -9,7 +10,7 @@ const ProjectsHome = ({ allProjects }) => {
   }, [])
 
   return (
-    <section className="flex justify-center px-4 bg-gray-50  ">
+    <section className="flex justify-center px-4 bg-gray-50 ">
       <div className="container py-6">
         <h2 className="py-10  text-center text-xl font-semibold ">
           Nuestro Principales Proyectos
@@ -38,7 +39,10 @@ const ProjectsHome = ({ allProjects }) => {
                   {project.description}
                 </p>
               </div>
-              <button className="bg-blue-400 w-full flex justify-center py-2 text-white font-semibold transition duration-300 hover:bg-teal-500">
+              <Link
+                to={`/proyectos/${project.id}`}
+                className="bg-blue-400 w-full flex justify-center py-2 text-white font-semibold transition duration-300 hover:bg-teal-500"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-2"
@@ -54,7 +58,7 @@ const ProjectsHome = ({ allProjects }) => {
                   />
                 </svg>
                 Ver proyecto
-              </button>
+              </Link>
             </div>
           ))}
 
@@ -141,9 +145,12 @@ const ProjectsHome = ({ allProjects }) => {
             </ul>
 
             <div className="flex-shrink-0 pt-2">
-              <button className="inline-flex items-center justify-center w-full max-w-xs px-4 py-2 transition-colors rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 bg-indigo-500 text-white hover:bg-indigo-700">
+              <Link
+                to="/proyectos"
+                className="inline-flex items-center justify-center w-full max-w-xs px-4 py-2 transition-colors rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 bg-indigo-500 text-white hover:bg-indigo-700"
+              >
                 Ver más
-              </button>
+              </Link>
             </div>
           </div>
         </div>

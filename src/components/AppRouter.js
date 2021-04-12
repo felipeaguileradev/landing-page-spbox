@@ -13,9 +13,8 @@ import Footer from './Footer'
 const AppRouter = () => {
   return (
     <Router>
+      <Navbar />
       <div>
-        <Navbar />
-
         <Switch>
           <Route exact path="/proyectos" component={ProjectsScreen} />
           <Route exact path="/" component={HomeScreen} />
