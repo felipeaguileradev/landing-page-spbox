@@ -10,9 +10,9 @@ const ProjectsHome = ({ allProjects }) => {
   }, [])
 
   return (
-    <section className="flex justify-center px-4 bg-gray-50 ">
+    <section className="flex justify-center px-4 pb-20 bg-gray-50 my-10 ">
       <div className="container py-6">
-        <h2 className="py-10  text-center text-xl font-semibold ">
+        <h2 className="py-10  text-center text-3xl font-semibold text-gray-800 ">
           Nuestro Principales Proyectos
         </h2>
         <div className="px-10 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

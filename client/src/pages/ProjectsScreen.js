@@ -9,13 +9,13 @@ export const ProjectsScreen = () => {
   }, [])
 
   return (
-    <main className="flex justify-center px-4 bg-gray-50  ">
+    <main className="flex justify-center px-4 bg-gray-50 py-10 pb-20  ">
       <div className="container py-6">
         <div className="py-10 ">
-          <h2 className=" text-center text-2xl font-semibold ">
+          <h2 className=" text-center text-3xl font-semibold ">
             Todos Nuestro Proyectos
           </h2>
-          <p className="text-center text-lg font-light text-gray-500">
+          <p className="text-center text-lg font-light text-gray-500 pb-10">
             Bienvenido, acá puedes visualizar todos nuestros proyectos
           </p>
         </div>
