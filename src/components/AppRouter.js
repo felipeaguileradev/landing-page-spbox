@@ -8,6 +8,7 @@ import {
 import { Navbar } from './Navbar'
 import { HomeScreen } from '../pages/HomeScreen'
 import { ProjectsScreen } from '../pages/ProjectsScreen'
+import Footer from './Footer'
 
 const AppRouter = () => {
   return (
@@ -20,6 +21,7 @@ const AppRouter = () => {
           <Route exact path="/" component={HomeScreen} />
           <Redirect to="/" />
         </Switch>
+        <Footer />
       </div>
     </Router>
   )

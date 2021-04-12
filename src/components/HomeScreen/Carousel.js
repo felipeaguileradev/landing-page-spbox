@@ -18,12 +18,12 @@ const Carousel = ({ projects }) => {
         )}
       >
         {projects.map((project) => (
-          <>
-            <div key={project.id} className="w-full h-96 bg-green-500 ">
+          <div key={project.id}>
+            <div className="w-full h-96 bg-green-500 ">
               <img
                 className="w-full h-full object-cover"
                 src={project.image}
-                alt={project.title}
+                alt={project.client}
               />
             </div>
             <div className="w-full h-full bg-transparent flex justify-center absolute bottom-0 left-0 ">
@@ -35,7 +35,7 @@ const Carousel = ({ projects }) => {
                 Ir al proyecto
               </Link>
             </div>
-          </>
+          </div>
         ))}
       </Slider>
     </section>
