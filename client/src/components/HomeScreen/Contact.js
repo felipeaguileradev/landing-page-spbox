@@ -3,7 +3,7 @@ import FormContact from './FormContact'
 
 const Contact = () => {
   return (
-    <section className="flex justify-center px-4 bg-gray-800 pt-10 mt-10">
+    <section className="flex justify-center px-4 pt-10 mt-10 bg-blue-900">
       <div className="container py-6">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className=" max-w-lg max-h-80 mx-auto p-6 mb-10 md:mb-0 md:mr-5 xl:mx-auto bg-gray-100  rounded-md ">

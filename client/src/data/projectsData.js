@@ -1,181 +1,86 @@
 export const projectsData = [
   {
     id: '1',
-    client: 'Awesome forest',
-    image:
-      'https://cdn.pixabay.com/photo/2020/11/09/15/12/trail-5726987_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010',
+    client: 'Asociación Chilena de Seguridad',
+    image: 'http://spboxweb.azurewebsites.net/images/clientes/achs.jpg',
+    description: 'Web Team',
     important: true
   },
   {
     id: '2',
-    client: 'A litle bird.',
-    image:
-      'https://cdn.pixabay.com/photo/2011/09/27/18/52/bird-9950_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010',
+    client: 'BUPA',
+    image: 'http://spboxweb.azurewebsites.net/images/clientes/bupa.jpg',
+    description: 'Sistema de control financiero Implementación Infraestructura',
     important: true
   },
   {
     id: '3',
-    client: 'The best friend.',
-    image:
-      'https://cdn.pixabay.com/photo/2017/12/27/14/02/friends-3042751_960_720.jpg',
+    client: 'MatrixConsulting',
+    image: 'http://spboxweb.azurewebsites.net/images/clientes/matrix.jpg',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010',
+      'Continuidad operacional y funcional Desarrollo de soluciones de negocio',
     important: true
   },
   {
     id: '4',
-    client: 'Beautiful desert.',
-    image:
-      'https://cdn.pixabay.com/photo/2016/11/21/17/44/arches-national-park-1846759_960_720.jpg',
+    client: 'Isapre Cruz Blanca',
+    image: 'http://spboxweb.azurewebsites.net/images/clientes/cruzblanca.jpg',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010'
+      'Troubleshooting en plataforma Sharepoint 2013 y recuperación de plataforma',
+    important: true
   },
   {
     id: '5',
-    client: 'Harley Davidson motorcycle.',
+    client: 'WEIR Minerals',
     image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
+      'http://spboxweb.azurewebsites.net/images/clientes/weir-minerals.jpg',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
+      'Desarrollo de Solución de Negocio Continuidad operacional y funcional',
     date: '03-10-2010',
     important: true
   },
   {
     id: '6',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010',
+    client: 'Instituto Nacional de Estadísticas',
+    image: 'http://spboxweb.azurewebsites.net/images/clientes/ine.jpg',
+    description: 'Desarrollo de Solución de Negocio',
     important: true
   },
   {
     id: '7',
-    client: 'Harley Davidson motorcycle.',
+    client: 'Grupo SAESA',
     image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010',
+      'https://admsaesa.gruposaesa.cl/imagenes/modulos/empresas/logo_1477663629.png',
+    description: 'Portales de solución de negocio',
     important: true
   },
   {
     id: '8',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010',
+    client: 'VULCO',
+    image: 'http://spboxweb.azurewebsites.net/images/clientes/vulco.jpg',
+    description: 'Desarrollo de Solución de Negocio',
     important: true
   },
   {
     id: '9',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010',
-    important: true
+    client: 'Fresenius-Kabi',
+    image: 'http://spboxweb.azurewebsites.net/images/clientes/fk.jpg',
+    description: 'Capacitaciòn y mentoría en uso de SharePoint 2010',
+    date: '03-10-2010'
   },
   {
     id: '10',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
+    client: 'WOM Chile',
+    image: 'http://spboxweb.azurewebsites.net/images/clientes/wom.jpg',
+    description: 'Capacitación y mentoría en uso de SharePoint 2013',
     date: '03-10-2010'
   },
   {
     id: '11',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
+    client: 'Empresa Nacional de Explosivos',
+    image: 'http://spboxweb.azurewebsites.net/images/clientes/enaex.jpg',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010'
-  },
-  {
-    id: '12',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010'
-  },
-  {
-    id: '13',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010'
-  },
-  {
-    id: '14',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010'
-  },
-  {
-    id: '15',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010'
-  },
-  {
-    id: '16',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010'
-  },
-  {
-    id: '17',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010'
-  },
-  {
-    id: '18',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
-    date: '03-10-2010'
-  },
-  {
-    id: '19',
-    client: 'Harley Davidson motorcycle.',
-    image:
-      'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown',
+      'Construcción de proceso de altas y bajas de usuarios de IT en Office 365',
     date: '03-10-2010'
   }
 ]

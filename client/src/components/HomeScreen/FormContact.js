@@ -108,7 +108,7 @@ const FormContact = () => {
 
       <button
         type="submit"
-        className="md:w-32 bg-indigo-600 text-white font-bold py-3 px-6 rounded-md mt-5 hover:bg-indigo-500 transition ease-in-out duration-300"
+        className="md:w-32 bg-indigo-600 text-white font-bold py-3 px-6 rounded-md mt-5 hover:bg-indigo-700 transition ease-in-out duration-300"
       >
         {loading ? (
           <div className=" flex justify-center">

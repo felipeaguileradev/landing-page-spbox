@@ -23,29 +23,31 @@ export const ProjectsScreen = () => {
           {projectsData.map((project) => (
             <div
               key={project.id}
-              className="wrapper max-w-xs bg-gray-50 rounded-md shadow-lg overflow-hidden mx-auto"
+              className="wrapper max-w-xs bg-gray-50 rounded-md shadow-lg overflow-hidden mx-auto flex flex-col justify-between"
             >
               <div>
-                <img
-                  src={project.image}
-                  alt={project.client}
-                  className="h-60 object-cover"
-                />
-              </div>
-              <div className="p-3 space-y-3">
-                <h3 className="text-gray-700 font-semibold text-md">
-                  {project.client}
-                </h3>
-                <span className="text-xs font-light text-gray-500">
-                  {project.date}
-                </span>
-                <p className="text-sm text-gray-900 leading-sm">
-                  {project.description}
-                </p>
+                <div>
+                  <img
+                    src={project.image}
+                    alt={project.client}
+                    className="h-60 object-cover"
+                  />
+                </div>
+                <div className="p-3 space-y-3">
+                  <h3 className="text-gray-700 font-semibold text-md">
+                    {project.client}
+                  </h3>
+                  <span className="text-xs font-light text-gray-500">
+                    {project.date}
+                  </span>
+                  <p className="text-sm text-gray-900 leading-sm">
+                    {project.description}
+                  </p>
+                </div>
               </div>
               <Link
                 to={`/proyectos/${project.id}`}
-                className="bg-blue-400 w-full flex justify-center py-2 text-white font-semibold transition duration-300 hover:bg-teal-500"
+                className="bg-gradient-to-r from-blue-600 to-blue-800  w-full flex justify-center py-2 text-white font-semibold transition duration-300 hover:bg-teal-500"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

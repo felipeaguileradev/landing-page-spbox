@@ -35,9 +35,9 @@ export const Navbar = () => {
             <div className="flex-shrink-0 flex items-center">
               <Link to="/">
                 <img
-                  className="block h-12 w-auto"
+                  className="block h-14 w-auto"
                   src="http://spboxweb.azurewebsites.net/images/logo-spbox.png"
-                  alt="Workflow"
+                  alt="spbox"
                 />
               </Link>
             </div>
@@ -50,7 +50,7 @@ export const Navbar = () => {
                   exact
                   activeClassName="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
                   to="/"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   aria-current="page"
                 >
                   Inicio
@@ -60,7 +60,7 @@ export const Navbar = () => {
                   exact
                   activeClassName="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
                   to="/proyectos"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Projectos
                 </NavLink>

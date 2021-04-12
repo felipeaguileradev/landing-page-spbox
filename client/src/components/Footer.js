@@ -2,10 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center px-4 text-gray-100 bg-gray-800">
-      <div className="container py-6">
-        <hr className="h-px mt-6 bg-gray-700 border-none " />
-
+    <footer className="flex justify-center text-gray-100 bg-gray-800">
+      <div className="container pb-6">
         <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
           <div>
             <p className="text-xl font-bold">SPBox</p>
