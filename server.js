@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
 
+const emailTo = "felipe.aguilera.g@gmail.com";
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -31,7 +33,7 @@ app.post("/api/send-email", (req, res) => {
     console.log("desde server", req.body);
     let mailOptions = {
       from: req.body.email, //quien envia el email
-      to: "felipe.aguilera.g@gmail.com", // email de destino
+      to: emailTo, // email de destino
       subject: "Enviado desde formulario spbox", //asunto
       text: req.body.message, //contenido
       html: htmlEmail, //html en el email
