@@ -18,19 +18,19 @@ const Carousel = ({ projects }) => {
       >
         {projects.map((project) => (
           <div key={project.id}>
-            <div className="w-full h-96 bg-green-500 ">
+            <div className="w-full h-auto">
               <img
                 className="w-full h-full object-cover"
                 src={project.image}
                 alt={project.client}
               />
             </div>
-            <div className="w-full h-full bg-transparent flex justify-center absolute bottom-0 left-0 ">
+            <div className="w-full h-full bg-transparent flex justify-center items-center  absolute bottom-0 left-0 ">
               <a
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
-                className="w-32 mt-72 h-10 bg-gradient-to-r from-blue-800 to-indigo-800 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium text-center"
+                className="w-52  h-20 border-2 border-light-blue-500 border-opacity-75  text-white hover:bg-gray-900 hover:bg-opacity-75 hover:border-0 px-3 py-2 rounded-md text-lg font-medium text-center flex justify-center items-center "
               >
                 Ver página
               </a>
