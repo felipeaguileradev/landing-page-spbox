@@ -1,30 +1,43 @@
 import React, { useState } from 'react'
+import axios from 'axios'
+import Loader from 'react-loader-spinner'
 
 const FormContact = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [tel, setTel] = useState('')
+  const [name, setName] = useState('')
+  const [loading, setLoading] = useState(false)
 
   const submitRequest = async (e) => {
     e.preventDefault()
 
-    console.log({ email, message })
+    console.log('DESDE CLIENTE', { email, message, name, tel })
 
-    const response = await fetch('/access', {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json'
-      },
-      body: JSON.stringify({ email, message })
-    })
+    setLoading(true)
+    await axios
+      .post('/api/send-email', {
+        email,
+        message,
+        name,
+        tel
+      })
+      .then(() => {
+        console.log('mensaje enviado correctamente')
+        setLoading(false)
+        resetForm()
+      })
+      .catch((err) => {
+        console.log(err)
+        setLoading(false)
+      })
+  }
 
-    const resData = await response.json()
-
-    if (resData.status === 'success') {
-      alert('Mensaje enviado')
-      this.resetForm()
-    } else if (resData.status === 'fail') {
-      alert('Falló el envío del email')
-    }
+  const resetForm = () => {
+    setEmail('')
+    setMessage('')
+    setTel('')
+    setName('')
   }
   return (
     <form className="flex flex-col justify-center" onSubmit={submitRequest}>
@@ -39,6 +52,8 @@ const FormContact = () => {
           placeholder="Nombre Completo"
           className="w-100 py-3 px-3 rounded-md bg-white  border border-gray-400  text-gray-800 font-normal focus:border-indigo-500 focus:outline-none"
           required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
       </div>
 
@@ -69,6 +84,8 @@ const FormContact = () => {
           placeholder="Número de teléfono"
           className="w-100 mt-2 py-3 px-3 rounded-md bg-white  border border-gray-400  text-gray-800 font-normal focus:border-indigo-500 focus:outline-none"
           required
+          value={tel}
+          onChange={(e) => setTel(e.target.value)}
         />
       </div>
 
@@ -93,7 +110,13 @@ const FormContact = () => {
         type="submit"
         className="md:w-32 bg-indigo-600 text-white font-bold py-3 px-6 rounded-md mt-5 hover:bg-indigo-500 transition ease-in-out duration-300"
       >
-        Enviar
+        {loading ? (
+          <div className=" flex justify-center">
+            <Loader type="Puff" color="#00BFFF" height={50} width={50} />
+          </div>
+        ) : (
+          'Enviar'
+        )}
       </button>
     </form>
   )
