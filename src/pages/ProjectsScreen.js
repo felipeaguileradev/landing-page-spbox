@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { projectsData } from '../components/projectsData'
+import { Link } from 'react-router-dom'
+import { projectsData } from '../data/projectsData'
 
 export const ProjectsScreen = () => {
   useEffect(() => {
@@ -42,7 +43,10 @@ export const ProjectsScreen = () => {
                   {project.description}
                 </p>
               </div>
-              <button className="bg-blue-400 w-full flex justify-center py-2 text-white font-semibold transition duration-300 hover:bg-teal-500">
+              <Link
+                to={`/proyectos/${project.id}`}
+                className="bg-blue-400 w-full flex justify-center py-2 text-white font-semibold transition duration-300 hover:bg-teal-500"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-2"
@@ -58,7 +62,7 @@ export const ProjectsScreen = () => {
                   />
                 </svg>
                 Ver proyecto
-              </button>
+              </Link>
             </div>
           ))}
         </div>

@@ -5,10 +5,11 @@ import {
   Route,
   Redirect
 } from 'react-router-dom'
-import { Navbar } from './Navbar'
+import { Navbar } from '../components/Navbar'
 import { HomeScreen } from '../pages/HomeScreen'
 import { ProjectsScreen } from '../pages/ProjectsScreen'
-import Footer from './Footer'
+import Footer from '../components/Footer'
+import ProjectCard from '../pages/ProjectCard'
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
       <div>
         <Switch>
           <Route exact path="/proyectos" component={ProjectsScreen} />
+          <Route exact path="/proyectos/:projectId" component={ProjectCard} />
           <Route exact path="/" component={HomeScreen} />
           <Redirect to="/" />
         </Switch>

@@ -32,7 +32,7 @@ const Carousel = ({ projects }) => {
                 rel="noreferrer"
                 className="mt-72 h-10 bg-blue-700 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
-                Ir al proyecto
+                Ver página
               </a>
             </div>
           </div>

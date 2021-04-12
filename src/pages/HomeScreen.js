@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import Carousel from '../components/HomeScreen/Carousel'
 import Contact from '../components/HomeScreen/Contact'
 import ProjectsHome from '../components/HomeScreen/ProjectsHome'
-import { projectsData } from '../components/projectsData'
-import { SliceData } from '../components/SliceData'
+import { projectsData } from '../data/projectsData'
+import { SliceData } from '../data/SliceData'
 
 export const HomeScreen = () => {
   useEffect(() => {
